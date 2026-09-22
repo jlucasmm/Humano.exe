@@ -1,0 +1,470 @@
+/* FUNDO DA PÁGINA */
+
+.main {
+    background-color: black;
+}
+
+
+/* IMAGEM PRINCIPAL */
+
+.img-back {
+    position: relative;
+}
+
+.img-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+    font-family: monospace;
+    font-weight: bold;
+
+    color: white;
+}
+
+.logo-titulo .exe {
+    color: red;
+}
+
+/* O QUE É O JOGO */
+
+.sobre-jogo {
+    width: 90%;
+    margin: 100px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* IMAGEM DO JOGO */
+
+.imagem-jogo {
+    width: 50%;
+}
+
+.imagem-jogo img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+/* TEXTO DO JOGO */
+
+.texto-jogo {
+    width: 50%;
+
+    text-align: center;
+
+    color: white;
+}
+
+.texto-jogo h2 {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 25px;
+}
+
+.texto-jogo p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* TÍTULO PERSONAGEM */
+
+.texto {
+    color: rgb(7, 7, 117);
+
+    font-size: 80px;
+
+    text-align: center;
+
+    font-family: monospace;
+}
+
+
+/* ÁREA DO PERSONAGEM */
+
+.personagem {
+    width: 90%;
+
+    margin: 100px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* TEXTO DO PERSONAGEM */
+
+.texto-per {
+    width: 50%;
+
+    text-align: center;
+
+    color: white;
+}
+
+.texto-per h2 {
+    font-size: 40px;
+}
+
+.texto-per p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* IMAGEM DO PERSONAGEM */
+
+.imagem-per {
+    width: 50%;
+}
+
+.imagem-per img {
+    width: 100%;
+
+    height: 700px;
+
+    object-fit: cover;
+}
+
+.texto1{
+     color: red;
+
+    font-size: 80px;
+
+    text-align: center;
+
+    font-family: monospace;
+}
+
+/* cards*/ 
+
+/* CARDS DOS VILÕES */
+
+.card-group {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    height: 550px;
+}
+
+
+/* IMAGEM DOS CARDS */
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* PARTE DO TEXTO */
+
+.card-body {
+    height: 350px;
+}
+
+/* =========================
+   MAPAS
+========================= */
+
+.container2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto 80px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Caixa de cada mapa */
+.box-mapa {
+    width: 100%;
+    height: 250px;
+    
+    background-color: black;
+    overflow: hidden;
+    
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    
+    transition: 0.3s;
+}
+
+/* Área da imagem */
+.img-mapa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagem do mapa */
+.img-mapa img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+    
+    display: block;
+}
+
+/* Nome do mapa */
+.titulo-mapa {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    padding: 15px;
+    
+    background: rgba(0, 0, 0, 0.6);
+    
+    color: white;
+    text-align: center;
+    
+    font-family: Georgia;
+}
+
+.titulo-mapa h2 {
+    margin: 0;
+}
+
+/* Efeito ao passar o mouse */
+.box-mapa:hover {
+    transform: scale(1.05);
+    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container2 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   CONTROLES
+========================= */
+
+.controles {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 200px;
+    margin: 50px auto 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px 40px;
+    gap: 0;
+
+    background: #05070a;
+    border: 1px solid #222;
+}
+
+
+/* TEXTO DOS CONTROLES */
+
+.controles .texto {
+    width: 350px;
+    min-width: 300px;
+
+    padding-right: 30px;
+    margin-right: 10px;
+
+    border-right: 2px solid #222;
+}
+
+.controles .texto h4 {
+    color: red;
+    margin-bottom: 8px;
+}
+
+.controles .texto h1 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.controles .texto p {
+    color: #aaa;
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* CADA CONTROLE */
+
+.item {
+    min-width: 150px;
+    height: 130px;
+
+    padding: 0 25px;
+
+    border-right: 2px solid #222;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:last-child {
+    border-right: none;
+}
+
+
+/* TECLAS ← → */
+
+.teclas {
+    display: flex;
+    gap: 10px;
+}
+
+.teclas span,
+.tecla,
+.tecla-pequena {
+    border: 2px solid #555;
+    border-radius: 5px;
+
+    background: #101419;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+/* SETAS */
+
+.teclas span {
+    width: 50px;
+    height: 45px;
+
+    font-size: 20px;
+}
+
+
+/* ESPAÇO */
+
+.tecla {
+    width: 100px;
+    height: 45px;
+
+    font-size: 12px;
+}
+
+
+/* E / F */
+
+.tecla-pequena {
+    width: 50px;
+    height: 45px;
+}
+
+
+/* NOME DO CONTROLE */
+
+.item p {
+    margin-top: 12px;
+    margin-bottom: 0;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #bbb;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .controles {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .controles .texto {
+        width: 100%;
+        min-width: 0;
+
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-right: 0;
+
+        border-right: none;
+        border-bottom: 2px solid #222;
+
+        text-align: center;
+    }
+
+    .item {
+        border-right: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .controles {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .item {
+        width: 50%;
+        min-width: 0;
+        padding: 10px;
+    }
+
+}
